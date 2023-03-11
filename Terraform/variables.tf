@@ -1,5 +1,5 @@
 variable "token" {
-  default = "dop_v1_db8741a0d7c72f3581ea1932b3cebe8caa3ea8e179e32fe957822b2eec69c7f1"
+  default = "dop_v1_87a95fa017f2ecbb5a6058b324391a4c106c058bd90f3494c1e979168a4f8d01"
 }
 variable "region" {
   default = "nyc1"
