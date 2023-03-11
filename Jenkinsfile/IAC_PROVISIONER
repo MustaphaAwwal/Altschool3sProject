@@ -1,0 +1,23 @@
+pipeline{
+    agent any
+    tools {
+      terraform 'terraform'
+    }
+    stages{
+        stage('Get the code'){
+            steps{
+                git credentialsId: 'e3fe7271-454f-4a46-92c7-8e51533a5bd9', url: 'https://github.com/MustaphaAwwal/Altschool3sProject'
+                }
+        }
+        stage('chenge the dir'){
+            steps{
+                dir('Terraform'){
+                            sh 'envsubst < terraform.rc > ~/.terraformrc'
+                            sh 'terraform init'
+                            sh 'terraform apply --auto-approve'
+                        }
+                  }
+        }
+    }
+}
+        
