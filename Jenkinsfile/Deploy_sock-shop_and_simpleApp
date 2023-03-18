@@ -1,0 +1,40 @@
+pipeline{
+    agent any
+    stages{
+        stage('Get the codebase'){
+            steps{
+                git credentialsId: 'e3fe7271-454f-4a46-92c7-8e51533a5bd9', url: 'https://github.com/MustaphaAwwal/Altschool3sProject'
+                }
+        }
+        
+        stage('deploy the sock-shop'){
+            steps{
+                dir('K8deployment/deploy/kubernetes'){
+                    withKubeConfig(caCertificate: '', clusterName: '', contextName: '', credentialsId: '5840b58a-971b-45ff-adb8-a35dcb9d8462', namespace: '', restrictKubeConfigAccess: false, serverUrl: '') {
+                        // sh 'kubectl create namespace sock-shop'
+                        sh 'kubectl apply -f complete-demo.yaml'
+                        sh 'kubectl create -f ./manifests-monitoring'
+                        
+                    }
+                        
+                }
+                
+            }
+        }
+        
+        stage('deploy the simple-app'){
+            steps{
+                dir('K8deployment'){
+                    withKubeConfig(caCertificate: '', clusterName: '', contextName: '', credentialsId: '5840b58a-971b-45ff-adb8-a35dcb9d8462', namespace: '', restrictKubeConfigAccess: false, serverUrl: '') {
+                        sh 'kubectl apply -f simple-webapp.yaml'
+                        
+                    }
+                        
+                }
+                
+            }
+        }
+        
+    }
+    
+}
