@@ -7,7 +7,7 @@ resource "digitalocean_kubernetes_cluster" "assignment-cluster" {
 
   node_pool {
     name       = var.poolname
-    size       = "s-2vcpu-2gb"
+    size       = "s-2vcpu-4gb"
     auto_scale = false
     node_count = var.k8s_node_count
     tags       = ["node-pool-tag"]
