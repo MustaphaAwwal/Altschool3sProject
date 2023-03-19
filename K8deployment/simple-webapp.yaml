@@ -31,15 +31,24 @@ kind: Service
 metadata:
   name: simple-webapp
   annotations:
-        prometheus.io/scrape: 'true'
+    service.beta.kubernetes.io/do-loadbalancer-protocol: "http"
+    service.beta.kubernetes.io/do-loadbalancer-tls-ports: "443"
+    service.beta.kubernetes.io/do-loadbalancer-certificate-id: "60d10b48-0a4a-46a5-92fe-40324ac83669"
+    prometheus.io/scrape: 'true'
   labels:
     name: simple-webapp
   namespace: simple-webapp
 spec:
   type: LoadBalancer
   ports:
-  - port: 80
-    targetPort: 80
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+    - name: https
+      protocol: TCP
+      port: 443
+      targetPort: 80
   selector:
     name: simple-webapp
 
