@@ -10,3 +10,7 @@ This Repository is for the project give to use at altschool for third semester e
 * The application should run on Kubernetes
 * The application should run on HTTPS with a Let’s Encrypt certificate
 
+### Deployment files
+* For the sock-shop -> K8deployment/deploy/kubernetes/complete-demo.yaml
+* for the web application -> K8deployment/simple-webapp.yaml
+
