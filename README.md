@@ -1,5 +1,5 @@
 # Altschool3sProject
-This Repository is for the project give to use at altschool for third semester examination. we are asked to provision 
+This Repository is for the project given at altschool for third semester examination. we are asked to provision 
 - Provision a webapp of your choosing with nginx/httpd frontend proxy and a database (mongo, postgresql etc) backend .
 - Provision the Socks Shop example microservice application - https://microservices-demo.github.io/
 
