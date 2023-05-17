@@ -37,7 +37,7 @@ The following screenshots are available in the `./screenshots` directory of this
 ![Prometheus Pod Running](./screenshots/prometheus-pod-running.JPG)
 
 
-Please note that additional screenshots, such as the running pods in each namespace and the monitoring namespace, can be found in the `./screenshots` directory.
+Please note that additional screenshots, such as the running pods in each namespace and the monitoring namespace, can be found in the `screenshots` directory of this repository.
 
 ## Infrastructure Provisioning
 
