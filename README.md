@@ -21,10 +21,21 @@ This repository contains the project assigned for the third-semester examination
 
 The following screenshots are available in the `./screenshots` directory of this repository:
 
-1. Jenkins Successful Build Interface: [./screenshots/jenkins1.JPG](./screenshots/jenkins1.JPG)
-2. Socks Shop Application UI: [./screenshots/sock-shop.JPG](./screenshots/sock-shop.JPG)
-3. Simple Webapp UI: [./screenshots/simple-webapp.JPG](./screenshots/simple-webapp.JPG)
-4. Prometheus Pod Running: [./screenshots/prometheus-pod-running.JPG](./screenshots/prometheus-pod-running.JPG)
+1. Jenkins Successful Build Interface:
+![Jenkins Successful Build Interface](./screenshots/jenkins1.JPG)
+
+
+2. Sock Shop Application UI:
+![Sock Shop Application UI](./screenshots/sock-shop.JPG)
+
+
+3. Simple Webapp UI:
+![Simple Webapp UI](./screenshots/simple-webapp.JPG)
+
+
+4. Prometheus Pod Running:
+![Prometheus Pod Running](./screenshots/prometheus-pod-running.JPG)
+
 
 Please note that additional screenshots, such as the running pods in each namespace and the monitoring namespace, can be found in the `./screenshots` directory.
 
@@ -37,4 +48,6 @@ The infrastructure for this project was provisioned using Terraform. The corresp
 The Jenkinsfile for this project, which defines the Jenkins pipeline, can be found in the `Jenkinsfile` directory.
 
 Please feel free to explore the repository for more details and documentation related to the project.
+
+
 
