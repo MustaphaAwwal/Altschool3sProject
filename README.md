@@ -1,16 +1,41 @@
 # Altschool3sProject
-This repository is for the project given at altschool for third semester examination. we are asked to provision 
-- Provision a webapp of your choosing with nginx/httpd frontend proxy and a database (mongo, postgresql etc) backend .
-- Provision the Socks Shop example microservice application - https://microservices-demo.github.io/
 
-## Some task Instructions Incude
-* Everything needs to be deployed using an Infrastructure as Code approach
-* Use Prometheus as a monitoring tool
-* Use Ansible or Terraform as the configuration management tool.
-* The application should run on Kubernetes
-* The application should run on HTTPS with a Let’s Encrypt certificate
+This repository contains the project assigned for the third-semester examination at Altschool. The objective of the project is to provision a web application with an nginx/httpd frontend proxy and a backend database (MongoDB, PostgreSQL, etc.). Additionally, it involves provisioning the Socks Shop example microservice application and fulfilling specific task instructions.
 
-### Deployment files
-* For the sock-shop -> K8deployment/deploy/kubernetes/complete-demo.yaml
-* for the web application -> K8deployment/simple-webapp.yaml
+## Task Instructions
+
+- Deploy everything using an Infrastructure as Code approach.
+- Utilize Prometheus as the monitoring tool.
+- Choose either Ansible or Terraform as the configuration management tool.
+- Ensure the application runs on Kubernetes.
+- Enable HTTPS with a Let's Encrypt certificate.
+
+## Deployment Files
+
+- Sock Shop: `K8deployment/deploy/kubernetes/complete-demo.yaml`
+- Web Application: `K8deployment/simple-webapp.yaml`
+
+## Screenshots
+
+Please find below the screenshots of various components:
+
+1. Jenkins Successful Build Interface:
+![Jenkins Successful Build Interface](./screenshots/jenkins1.JPG)
+
+2. Sock Shop Application UI:
+![Sock Shop Application UI](./screenshots/sock-shop.JPG)
+
+3. Simple Webapp UI:
+![Simple Webapp UI](./screenshots/simple-webapp.JPG)
+
+4. Prometheus Pod Running:
+![Prometheus Pod Running](./screenshots/prometheus-pod-running.JPG)
+
+For additional screenshots, please refer to the `screenshots` directory in the repository. It includes screenshots of different namespaces, such as running pods in each namespace and the monitoring namespace.
+
+Feel free to explore the repository and use the provided deployment files to set up the project environment.
+
+## Contributions
+
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
