@@ -1,41 +1,40 @@
 # Altschool3sProject
 
-This repository contains the project assigned for the third-semester examination at Altschool. The objective of the project is to provision a web application with an nginx/httpd frontend proxy and a backend database (MongoDB, PostgreSQL, etc.). Additionally, it involves provisioning the Socks Shop example microservice application and fulfilling specific task instructions.
+This repository contains the project assigned for the third-semester examination at Altschool. The objective of the project is to provision a web application with an nginx/httpd frontend proxy and a backend database, along with the deployment of the Socks Shop example microservice application.
 
-## Task Instructions
+## Project Summary
 
+- Provision a webapp of your choosing with nginx/httpd frontend proxy and a database (mongo, postgresql, etc.) backend.
+- Provision the Socks Shop example microservice application - [Socks Shop Demo](https://microservices-demo.github.io/).
 - Deploy everything using an Infrastructure as Code approach.
-- Utilize Prometheus as the monitoring tool.
-- Choose either Ansible or Terraform as the configuration management tool.
-- Ensure the application runs on Kubernetes.
+- Use Prometheus as a monitoring tool.
+- Use Ansible or Terraform as the configuration management tool.
+- Run the application on Kubernetes.
 - Enable HTTPS with a Let's Encrypt certificate.
 
 ## Deployment Files
 
-- Sock Shop: `K8deployment/deploy/kubernetes/complete-demo.yaml`
-- Web Application: `K8deployment/simple-webapp.yaml`
+- For the sock-shop: `K8deployment/deploy/kubernetes/complete-demo.yaml`
+- For the web application: `K8deployment/simple-webapp.yaml`
 
 ## Screenshots
 
-Please find below the screenshots of various components:
+The following screenshots are available in the `./screenshots` directory of this repository:
 
-1. Jenkins Successful Build Interface:
-![Jenkins Successful Build Interface](./screenshots/jenkins1.JPG)
+1. Jenkins Successful Build Interface: [./screenshots/jenkins1.JPG](./screenshots/jenkins1.JPG)
+2. Socks Shop Application UI: [./screenshots/sock-shop.JPG](./screenshots/sock-shop.JPG)
+3. Simple Webapp UI: [./screenshots/simple-webapp.JPG](./screenshots/simple-webapp.JPG)
+4. Prometheus Pod Running: [./screenshots/prometheus-pod-running.JPG](./screenshots/prometheus-pod-running.JPG)
 
-2. Sock Shop Application UI:
-![Sock Shop Application UI](./screenshots/sock-shop.JPG)
+Please note that additional screenshots, such as the running pods in each namespace and the monitoring namespace, can be found in the `./screenshots` directory.
 
-3. Simple Webapp UI:
-![Simple Webapp UI](./screenshots/simple-webapp.JPG)
+## Infrastructure Provisioning
 
-4. Prometheus Pod Running:
-![Prometheus Pod Running](./screenshots/prometheus-pod-running.JPG)
+The infrastructure for this project was provisioned using Terraform. The corresponding Terraform files can be found in the `Terraform` directory of this repository.
 
-For additional screenshots, please refer to the `screenshots` directory in the repository. It includes screenshots of different namespaces, such as running pods in each namespace and the monitoring namespace.
+## Jenkins Pipeline
 
-Feel free to explore the repository and use the provided deployment files to set up the project environment.
+The Jenkinsfile for this project, which defines the Jenkins pipeline, can be found in the `Jenkinsfile` directory.
 
-## Contributions
-
-Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+Please feel free to explore the repository for more details and documentation related to the project.
 
